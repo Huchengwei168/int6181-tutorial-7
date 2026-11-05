@@ -1,7 +1,7 @@
 def validate_password(password):
     if not isinstance(password, str):
         print("Password must be a string")
-        return False
+        return True
 
     if len(password) < 8 or len(password) > 20:
         print("Password length must be between 8 and 20 characters")
